@@ -1,0 +1,77 @@
+h1{
+    color: green;
+    text-align: center;
+    }
+section{
+    display: flex;
+    width: 800px;
+    height: 200px;
+    margin: auto;
+    background-color: lightseagreen;
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: 5s ease;
+}
+section img:hover{
+    cursor: crosshair;
+    width: 400px;
+    opacity:1;
+    filter: contrast(120%);
+}
+a{
+    text-decoration: none; 
+}
+
+  h2{
+    color: lightgreen;
+    animation-name: disco;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+       }
+  @keyframes disco {
+    from {
+      color: lightgreen;
+    }
+      to {
+        color: red;
+        margin-left: 180px;
+      }
+    }
+  h3{
+    background-color: yellow; 
+    color: blue;
+    text-align: center;
+    animation-name: fade;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+       }
+  @keyframes fade {
+     from {
+      background-color: blue;
+  }
+    to {
+      background-color: lightgreen;
+    }
+  }
+  
+ div{
+    text-align: center;
+    animation-name: vinilo;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes vinilo {
+    to {
+      transform: rotate(360deg); 
+    }
+  }
+  .disco{
+    width:250px;
+    height:250px;
+
+  }
+  
